@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de iPhones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #0077ff;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ebe57;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📱 Loja de iPhones</h1>
+    <p>Modelos novos e seminovos com garantia!</p>
+  </header>
+
+  <main>
+    <!-- iPhone 11 -->
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-select-2019-family?wid=940&hei=1112&fmt=png-alpha&.v=1567022175704" alt="iPhone 11">
+      <h2>iPhone 11</h2>
+      <p class="price">R$ 2.499</p>
+      <a class="btn" href="https://wa.me/5511999999999?text=Quero comprar o iPhone 11!">Comprar no WhatsApp</a>
+    </div>
+
+    <!-- iPhone 12 -->
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-select-2020-family_GEO_BR?wid=940&hei=1112&fmt=png-alpha&.v=1604343708000" alt="iPhone 12">
+      <h2>iPhone 12</h2>
+      <p class="price">R$ 3.199</p>
+      <a class="btn" href="https://wa.me/5511999999999?text=Quero comprar o iPhone 12!">Comprar no WhatsApp</a>
+    </div>
+
+    <!-- iPhone 13 -->
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-select-2021-family?wid=940&hei=1112&fmt=png-alpha&.v=1631652955000" alt="iPhone 13">
+      <h2>iPhone 13</h2>
+      <p class="price">R$ 3.999</p>
+      <a class="btn" href="https://wa.me/5511999999999?text=Quero comprar o iPhone 13!">Comprar no WhatsApp</a>
+    </div>
+
+    <!-- iPhone 14 -->
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-select-2022-family?wid=940&hei=1112&fmt=png-alpha&.v=1660744904386" alt="iPhone 14">
+      <h2>iPhone 14</h2>
+      <p class="price">R$ 4.799</p>
+      <a class="btn" href="https://wa.me/5511999999999?text=Quero comprar o iPhone 14!">Comprar no WhatsApp</a>
+    </div>
+
+    <!-- iPhone 15 -->
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-select-202309?wid=940&hei=1112&fmt=png-alpha&.v=1693081597704" alt="iPhone 15">
+      <h2>iPhone 15</h2>
+      <p class="price">R$ 5.499</p>
+      <a class="btn" href="https://wa.me/5571982042469?text=Quero comprar o iPhone 15!">Comprar no WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Loja de iPhones | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
